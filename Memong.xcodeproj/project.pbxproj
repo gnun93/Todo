@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711190F22509F48E00793B33 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711190F12509F48E00793B33 /* DetailViewController.swift */; };
+		711F2B3E250999960051A543 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F2B3D250999960051A543 /* ToDoListTableViewController.swift */; };
 		7156DB6A2508B1A0001A12AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156DB692508B1A0001A12AD /* AppDelegate.swift */; };
 		7156DB6C2508B1A0001A12AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156DB6B2508B1A0001A12AD /* SceneDelegate.swift */; };
-		7156DB6E2508B1A0001A12AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156DB6D2508B1A0001A12AD /* ViewController.swift */; };
 		7156DB712508B1A0001A12AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7156DB6F2508B1A0001A12AD /* Main.storyboard */; };
 		7156DB742508B1A0001A12AD /* Memong.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7156DB722508B1A0001A12AD /* Memong.xcdatamodeld */; };
 		7156DB762508B1A3001A12AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7156DB752508B1A3001A12AD /* Assets.xcassets */; };
 		7156DB792508B1A3001A12AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7156DB772508B1A3001A12AD /* LaunchScreen.storyboard */; };
+		71D39ECE250B6FC200325EEA /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D39ECD250B6FC200325EEA /* ToDo.swift */; };
+		71D39ED2250B706000325EEA /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D39ED1250B706000325EEA /* CustomTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		711190F12509F48E00793B33 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		711F2B3D250999960051A543 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
 		7156DB662508B1A0001A12AD /* Memong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7156DB692508B1A0001A12AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7156DB6B2508B1A0001A12AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7156DB6D2508B1A0001A12AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7156DB702508B1A0001A12AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7156DB732508B1A0001A12AD /* Memong.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memong.xcdatamodel; sourceTree = "<group>"; };
 		7156DB752508B1A3001A12AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7156DB782508B1A3001A12AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7156DB7A2508B1A3001A12AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D39ECD250B6FC200325EEA /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		71D39ED1250B706000325EEA /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711F2B3A250999590051A543 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71D39ECD250B6FC200325EEA /* ToDo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7156DB5D2508B1A0001A12AD = {
 			isa = PBXGroup;
 			children = (
+				711F2B3A250999590051A543 /* Model */,
 				7156DB682508B1A0001A12AD /* Memong */,
 				7156DB672508B1A0001A12AD /* Products */,
 			);
@@ -60,12 +75,14 @@
 			children = (
 				7156DB692508B1A0001A12AD /* AppDelegate.swift */,
 				7156DB6B2508B1A0001A12AD /* SceneDelegate.swift */,
-				7156DB6D2508B1A0001A12AD /* ViewController.swift */,
 				7156DB6F2508B1A0001A12AD /* Main.storyboard */,
 				7156DB752508B1A3001A12AD /* Assets.xcassets */,
 				7156DB772508B1A3001A12AD /* LaunchScreen.storyboard */,
 				7156DB7A2508B1A3001A12AD /* Info.plist */,
 				7156DB722508B1A0001A12AD /* Memong.xcdatamodeld */,
+				711F2B3D250999960051A543 /* ToDoListTableViewController.swift */,
+				711190F12509F48E00793B33 /* DetailViewController.swift */,
+				71D39ED1250B706000325EEA /* CustomTableCell.swift */,
 			);
 			path = Memong;
 			sourceTree = "<group>";
@@ -141,10 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7156DB6E2508B1A0001A12AD /* ViewController.swift in Sources */,
 				7156DB6A2508B1A0001A12AD /* AppDelegate.swift in Sources */,
+				71D39ECE250B6FC200325EEA /* ToDo.swift in Sources */,
 				7156DB742508B1A0001A12AD /* Memong.xcdatamodeld in Sources */,
+				711F2B3E250999960051A543 /* ToDoListTableViewController.swift in Sources */,
+				711190F22509F48E00793B33 /* DetailViewController.swift in Sources */,
 				7156DB6C2508B1A0001A12AD /* SceneDelegate.swift in Sources */,
+				71D39ED2250B706000325EEA /* CustomTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C44AABU7ZA;
 				INFOPLIST_FILE = Memong/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com-Memong.Memong";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C44AABU7ZA;
 				INFOPLIST_FILE = Memong/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com-Memong.Memong";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
